@@ -1,0 +1,23 @@
+AOP (Aspect Oriented Programming)
+
+Around Advice 스프링의 특징 : Cross-cutting Concern(곁다리 업무) 에 대한 로직을
+	어떻게 꽂아넣을 것이냐에 따라서 4가지 
+	(
+	Before (실행 전), 
+	After returnning (실행 후), 
+	After throwing (예외 발생 시),
+	Around (실행 전, 후)
+	) 로 구분된다. 
+
+AOP 구현 방식
+
+Point Cut (Weaving, Join Point)
+
+Proxy를 호출하여 Cross-cutting Concern을 실행할 때 원래 메소드 (Core Concern)
+를 찾아가는데 이 과정이 뜨개질과 비슷하여 이를 Weaving(뜨개질)이라고 하며
+Weaving 시 대상이 되는 Core Concern을 JoinPoint라고 한다. 만약 원하는 메서드만을 호출하길 
+원할 때 그 메서드를 지정하는 것을 Point Cut이라고 한다.
+
+
+
+간소화된 Advisor -> 말 그대로 Advisor 짧게 쓰기
